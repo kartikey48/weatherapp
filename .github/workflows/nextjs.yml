@@ -18,7 +18,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      NEXT_DISABLE_ESLINT: true  # ✅ disables eslint during build
+      NEXT_DISABLE_ESLINT: true  # Disables eslint during build
 
     steps:
       - name: Checkout
@@ -38,6 +38,7 @@ jobs:
           else
             echo "Unable to determine package manager"
             exit 1
+          fi  # Corrected closing for if statement
 
       - name: Setup Node
         uses: actions/setup-node@v4
