@@ -3,7 +3,6 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Droplet, Search, Thermometer, Wind } from "lucide-react";
-import Image from "next/image";
 import { getWeatherData } from "./actions";
 import { WeatherData } from '../types/weather';
 import { useState } from "react";
